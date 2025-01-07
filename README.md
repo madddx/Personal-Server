@@ -15,7 +15,7 @@ SCK -> D5 |
 MOSI -> D7 |
 MISO -> D6 |
 VCC -> 3V |
-GND -> GND |
+GND -> GND
 
 # 🚀 Key Features:
 
