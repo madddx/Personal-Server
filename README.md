@@ -12,7 +12,7 @@ This Project is a Complete build over to set-up your own server and share files 
    - Users can upload files from their local device to the SD card connected to the ESP8266 NodeMCU through a simple web interface.  
    - Supports various file types and ensures proper handling during upload.  
 
-![image](Assets/Image_1.png)
+![image](Assets/Image_1.jpg)
 
 2. **File Listing with Metadata**  
    - Dynamically lists all files stored on the SD card.  
@@ -27,7 +27,7 @@ This Project is a Complete build over to set-up your own server and share files 
    - Clean and intuitive HTML-based web interface with integrated CSS for enhanced user experience.  
    - Buttons for upload, navigation, and file actions are styled for clarity and accessibility.
 
-![image](Assets/Image_2.png)
+![image](Assets/Image_2.jpg)
 
 5. **Content-Type Detection for File Downloads**  
    - Dynamically detects file extensions to set the correct MIME type during downloads (e.g., `text/plain` for `.txt`, `image/jpeg` for `.jpg`).  
@@ -46,7 +46,7 @@ This Project is a Complete build over to set-up your own server and share files 
 9. **Error Handling**  
    - Provides user-friendly error messages for scenarios like failed SD card initialization, file not found, or upload failures.
   
-![image](Assets/Image_3.png)
+![image](Assets/Image_3.jpg)
 
 10. **Compact and Portable**  
     - The entire system is compact, portable, and can be deployed with minimal hardware (ESP8266, SD card module, and power supply).  
