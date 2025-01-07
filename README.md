@@ -133,7 +133,7 @@ These technical highlights demonstrate the project's advanced use of embedded sy
 
 I am always open to feedback, collaboration opportunities, and discussions about game development. Feel free to connect with me if you're interested in learning more about this project or if you have any insights to share!
 
-# [LinkedIn](https://www.linkedin.com/in/madheshh/)
-# [LinkedIn](https://www.linkedin.com/in/agilesh-arumugam/)
+# [LinkedIn/Madhesh H](https://www.linkedin.com/in/madheshh/)
+# [LinkedIn/Agilesh Arumugam](https://www.linkedin.com/in/agilesh-arumugam/)
 
 
