@@ -10,12 +10,12 @@ This Project is a Complete build over to set-up your own server and share files 
 
 SD Card Module -> ESP8266 NodeMCU 1.0
 
-CS -> D8
-SCK -> D5
-MOSI -> D7
-MISO -> D6
-VCC -> 3V
-GND -> GND
+CS -> D8 |
+SCK -> D5 |
+MOSI -> D7 |
+MISO -> D6 |
+VCC -> 3V |
+GND -> GND |
 
 # 🚀 Key Features:
 
