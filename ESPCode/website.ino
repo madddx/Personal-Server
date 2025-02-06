@@ -33,6 +33,7 @@ void handleRoot() {
   html += "<input type='submit' value='Upload'>\n";
   html += "</form>\n";
   html += "<a href='/list'>List Files</a>\n";
+  html += "<button onclick=\"window.location.href='/copy_to_laptop'\">Copy Files to Laptop</button>\n";
   html += "</body>\n</html>";
   server.send(200, "text/html", html);
 }
@@ -182,6 +183,22 @@ int createFile(String filename)
   }
 }
 
+void handleCopyToLaptop() {
+  Serial.println("TRANSFER_START");
+  File root = SD.open("/");
+  File file = root.openNextFile();
+  while (file) {
+    Serial.print("FILE_START:");
+    Serial.println(file.name());
+    while (file.available()) Serial.write(file.read());
+    Serial.println("\nFILE_END");
+    file.close();
+    file = root.openNextFile();
+  }
+  Serial.println("TRANSFER_END");
+  server.send(200, "text/plain", "File transfer started. Run the Python script on your laptop.");
+}
+
 void printDirectory(File dir, int numTabs) {
   while (true) {
 
@@ -233,6 +250,7 @@ void setup() {
   server.on("/list", HTTP_GET, handleListFiles);
   server.on("/delete", HTTP_GET, handleDeleteFile);  // Handle file deletion
   server.on("/download", HTTP_GET, handleDownloadFile);  // Handle file download
+  server.on("/copy_to_laptop", HTTP_GET, handleCopyToLaptop);
 
   server.begin();
 }
